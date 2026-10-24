@@ -1,13 +1,5 @@
-on:
-  push:
-  workflow_dispatch:
-
-
 name: Bash CI
-on:
-  push:
-  workflow_dispatch:
-
+on: [push, workflow_dispatch]
 jobs:
   test:
     runs-on: ubuntu-latest
