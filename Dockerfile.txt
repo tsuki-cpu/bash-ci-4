@@ -1,0 +1,5 @@
+FROM alpine:latest
+WORKDIR /app
+COPY . /app
+RUN apk add --no-cache bash shellcheck
+CMD ["sh", "-c", "shellcheck factorial.sh test.sh && bash test.sh"]
