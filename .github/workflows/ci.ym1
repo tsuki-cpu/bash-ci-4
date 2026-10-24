@@ -1,4 +1,3 @@
-name: Bash CI
 on: [push]
 jobs:
   test:
